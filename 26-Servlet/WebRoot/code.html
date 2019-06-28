@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	function change(obj) {
+		obj.src = "/fileDownLoadTest/CheckCodeServlet?time=" + new Date().getTime();
+	}
+</script>
+
+</head>
+<body>
+
+<form action="/26-Servlet/RegistServlet">
+	<img src="/26-Servlet/CheckCodeServlet" onclick="change(this)"><br />
+	<input type="text" placeholder="请输入验证码..."  name = "code"><br /><br /> 
+	<input type="submit" value="注册">
+</form>
+	
+
+</body>
+</html>
